@@ -7,7 +7,7 @@
     
     <div class="col-8 m-auto">
         @php
-            $user = $book->find($book->id)->relUsers;
+                $user = $book->find($book->id)->relUsers;
         @endphp
         Título: {{$book->title}}<br>
         Páginas: {{$book->pages}}<br>
