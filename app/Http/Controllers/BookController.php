@@ -90,6 +90,7 @@ class BookController extends Controller
      */
     public function destroy(string $id)
     {
-        
+        $this->objBook->destroy($id);
+        return redirect('/books');
     }
 }
